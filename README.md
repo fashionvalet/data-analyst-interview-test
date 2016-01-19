@@ -1,6 +1,6 @@
 # Data Analyst Interview Test
 
-This is a simple test for the data analyst position at FashionValet. This test will require candidate to generate reports based on the sample data.
+This is a simple test for the data analyst position at FashionValet. This test will require candidate to generate reports based on the sample data file ```data-set.csv```.
 
 **Please note that these data does not represent our real customers data.**
 
@@ -16,6 +16,6 @@ Candidate need calculate total customers according to the following age groups:
 * 46 to 50
 * Above 50
 
-Please update your findings in the ```Answer.md``` file and briefly explain the steps that you take to solve the problem.
+Please update your findings in the ```ANSWER.md``` file and briefly explain the steps that you take to solve the problem.
 
 Candidate is required to **Fork** the repository and submit a **Pull Request**. Please make sure to include your name into the branch name. Example ```ahmad-shah-answer```.
