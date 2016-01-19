@@ -4,6 +4,12 @@ from faker import Factory
 generator = Factory.create()
 data = [['first_name', 'last_name', 'email', 'date_of_birth', 'country_code', 'created_at', 'last_login_at']]
 
+def generateBirthday(datetime):
+    if int(datetime.strftime('%Y')) < 1997:
+        datetime = generateBirthday(generator.date_time())
+
+    return datetime
+
 def generateRecentDateTime(datetime):
     if int(datetime.strftime('%Y')) < 2012:
         datetime = generateRecentDateTime(generator.date_time())
@@ -15,7 +21,7 @@ for i in range(0, 1000):
         generator.first_name(),
         generator.last_name(),
         generator.email(),
-        generator.date(),
+        generateBirthday(generator.date_time()).strftime('%Y-%m-%d'),
         generator.country_code(),
         generateRecentDateTime(generator.date_time()).strftime('%Y-%m-%d %H:%M:%S'),
         generateRecentDateTime(generator.date_time()).strftime('%Y-%m-%d %H:%M:%S')
