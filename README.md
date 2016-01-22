@@ -16,6 +16,9 @@ Candidate need calculate total customers according to the following age groups:
 * 46 to 50
 * Above 50
 
+##### Additional
+Candidate need to propose what sort of other analysis or reports that we can come out based on the sample data.
+
 Please update your findings in the ```ANSWER.md``` file and briefly explain the steps that you take to solve the problem.
 
 Candidate is required to **Fork** the repository and submit a **Pull Request**. Please make sure to include your name into the branch name. Example ```ahmad-shah-answer```.
